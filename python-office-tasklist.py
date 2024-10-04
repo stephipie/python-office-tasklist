@@ -16,7 +16,25 @@ def show_tasklist():
         for task in office_tasklist:
             print("Your tasklist:")        
             print(task)
-show_tasklist()             
+show_tasklist()
+
+def main():
+    while True:
+        print("1. Add a task.")
+        print("2. Show the list.")
+        print("3. End the programm.")
+        choice = input("Please make your choice. \n")
+        if choice == "1":
+            add_task()
+        elif choice == "2":
+            show_tasklist()
+        elif choice == "3":
+            print("Goodbye.")
+            break
+if __name__ == "__main__":
+    main()        
+
+
    
 
 
