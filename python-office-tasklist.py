@@ -7,7 +7,17 @@ def add_task():                 # define add function, ask for user input and se
         print(f"The task {task} was added to your list.")
     else:
         print("Your tasklist is empty.")
-add_task()        
+add_task()
+
+def show_tasklist():
+    if office_tasklist == None:
+        print("Your tasklist is empty.")
+    else:
+        print("Your tasklist:")        
+        for task in office_tasklist:
+            print(task)
+show_tasklist()             
+   
 
 
 
