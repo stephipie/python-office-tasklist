@@ -31,7 +31,7 @@ def main():                                 # define main function
         elif choice == "3":
             print("Goodbye.")
             break                           # break to end the while - loop
-if __name__ == "__main__":
+if __name__ == "__main__":                  # control function 
     main()        
 
 
